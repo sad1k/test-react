@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vercel
+.omc
+
+# Кастомная сборка CanvasKit (большие бинарники, генерируются скриптом).
+# Кладите сюда собственные canvaskit.js / canvaskit.wasm с PDF-бэкендом.
+/public/canvaskit/*.wasm
+/public/canvaskit/*.js
+
+# Рабочая директория сборки кастомного CanvasKit (Skia, emsdk, depot_tools).
+/.canvaskit-build
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log

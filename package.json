@@ -1,0 +1,28 @@
+{
+  "name": "pixi-skia-pdf",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Рендер PIXI.Container через Skia (CanvasKit) с векторным экспортом в PDF. UI на React.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "make:assets": "node scripts/make-sample-png.mjs",
+    "build:canvaskit": "bash scripts/build-canvaskit-pdf.sh"
+  },
+  "dependencies": {
+    "canvaskit-wasm": "^0.39.1",
+    "pdf-lib": "^1.17.1",
+    "pixi.js-legacy": "7.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
